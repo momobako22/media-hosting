@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 设置字符编码，确保支持多语言 -->
+    <meta charset="UTF-8">
+    <!-- 响应式设计，适配手机和桌面 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 页面标题，区分视频 -->
+    <title>Video 1 Preview</title>
+    <!-- 简单 CSS 美化 -->
+    <style>
+        body { 
+            font-family: Arial, sans-serif; /* 统一字体 */
+            margin: 40px; /* 页面边距 */
+        }
+        h1 { 
+            color: #333; /* 标题颜色 */
+        }
+        video { 
+            margin: 20px 0; /* 视频间距 */
+            max-width: 100%; /* 适配屏幕 */
+        }
+        a { 
+            color: #007bff; /* 链接颜色 */
+            text-decoration: none; /* 无下划线 */
+        }
+        a:hover { 
+            text-decoration: underline; /* 悬停下划线 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 视频标题 -->
+    <h1>Video 1 - Introduction</h1>
+    <!-- 视频播放器，controls 添加播放控件 -->
+    <video controls width="600">
+        <!-- 视频文件路径，指向仓库中的 video1.mkv -->
+        <source src="video1.mkv" type="video/x-matroska">
+        <!-- 提示文本，浏览器不支持时显示 -->
+        Your browser does not support the video tag.
+    </video>
+    <!-- 返回导航页面 -->
+    <p><a href="index.html">Back to Gallery</a></p>
+    <!-- 提示：MKV 可能无音频或不播放 -->
+    <p>Note: If the video doesn't play, try converting to MP4 or using Chrome.</p>
+</body>
+</html>
